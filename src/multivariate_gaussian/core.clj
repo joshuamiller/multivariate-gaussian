@@ -13,7 +13,7 @@
      (row-count x))))
 
 (defn probability
-  "Calculate epsilon given mean, covariance matrix, and X"
+  "Calculate probability given mean, covariance matrix, and X"
   [mu sigma x]
   (let [x-minus-mu (sub x mu)
         n (row-count mu)]
